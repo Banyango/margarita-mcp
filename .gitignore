@@ -1,0 +1,75 @@
+prompts/
+.env
+.idea/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.egg
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# mypy
+.mypy_cache/
+
+# Pyright cache
+.pyright/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+.env.*.local
+.env.local
+
+# Logs
+*.log
+
+# Local secrets and keys
+*.pem
+*.key
+
+# Local development files
+*.local
+
+# Ignore compiled wheel dirs
+wheelhouse/
+
+# keep lockfile committed; do not ignore uv.lock
+# end of file
