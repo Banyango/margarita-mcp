@@ -8,6 +8,10 @@ from core.prompts.models import PromptModel
 @abstract
 class PromptsRepository(ABC):
     @abstractmethod
+    def load(self) -> None:
+        """Load prompts from the data source"""
+
+    @abstractmethod
     def list_prompts(self) -> list[PromptModel]:
         """List all prompts"""
 

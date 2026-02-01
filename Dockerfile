@@ -21,7 +21,8 @@ RUN apt-get update \
 COPY pyproject.toml uv.lock /app/
 
 # Upgrade pip, install the `uv` tool and use it to install locked dependencies
-RUN python -m pip install --upgrade pip \
+RUN cd /app  \
+    && python -m pip install --upgrade pip \
     && pip install --no-cache-dir uv \
     && uv sync
 
@@ -35,5 +36,5 @@ ENV PYTHONPATH="/app/src:${PYTHONPATH}"
 EXPOSE 8000
 
 # Default command: run the project's main module which starts uvicorn
-CMD ["python", "-m", "src.main"]
+CMD ["uv", "run", "python", "src/main.py"]
 

@@ -4,7 +4,7 @@ from wireup import service
 
 class APIConfig(BaseSettings):
     app_port: int = 8000
-    app_host: str = "localhost"
+    app_host: str = "0.0.0.0"
     api_version: str = "1.0.0"
     log_level: str = "INFO"
     path_prefix: str = "/api"

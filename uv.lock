@@ -672,15 +672,15 @@ wheels = [
 
 [[package]]
 name = "margarita"
-version = "0.1.0"
+version = "0.2.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
     { name = "loguru" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/96/ec/3fde3da83aaef7a33fd3a24cf58b96a7ec19464fb274a37e7349a676c671/margarita-0.1.0.tar.gz", hash = "sha256:b7c20f018b51d994b2e70cb55e67fd57fe91a0313ac295846d9018e09ac97dff", size = 722350, upload-time = "2026-01-22T14:58:12.054Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/4b/78/85a3f5f165f46b4b6c6975bda99e95253802316547a05c5aa716c6803b0b/margarita-0.2.0.tar.gz", hash = "sha256:9a107986a7275995d8bf5bbc30f056d2b1012fdf31380f80fd34b592dd01216a", size = 718308, upload-time = "2026-01-26T01:46:43.366Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/94/41/f767b9aca5f9ca6df078c5a487ab122bd1c0d8cea4d2914f68fd5bf954c5/margarita-0.1.0-py3-none-any.whl", hash = "sha256:5078324a57bc2e02125a52e4a82508b780ed198dac4f02f1d99501e58fb04d37", size = 10937, upload-time = "2026-01-22T14:58:10.773Z" },
+    { url = "https://files.pythonhosted.org/packages/11/c6/b8121e8e4515688a544d4f7c760439d7df2324d1107ccddcd4e6e6729831/margarita-0.2.0-py3-none-any.whl", hash = "sha256:220254fe11ca66847b45f2c7a19eea9e1939b6dee090b9eddba67a311bc031a8", size = 12425, upload-time = "2026-01-26T01:46:44.523Z" },
 ]
 
 [[package]]
@@ -693,6 +693,7 @@ dependencies = [
     { name = "httpx" },
     { name = "margarita" },
     { name = "pydantic" },
+    { name = "uvicorn" },
     { name = "wireup" },
 ]
 
@@ -708,8 +709,9 @@ requires-dist = [
     { name = "fastapi", specifier = ">=0.128.0" },
     { name = "fastmcp", specifier = ">=2.14.2" },
     { name = "httpx", specifier = ">=0.27.0" },
-    { name = "margarita", specifier = ">=0.1.0" },
+    { name = "margarita", specifier = ">=0.2.0" },
     { name = "pydantic", specifier = ">=2.12.5" },
+    { name = "uvicorn", specifier = ">=0.40.0" },
     { name = "wireup", specifier = ">=2.3.0" },
 ]
 

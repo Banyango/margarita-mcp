@@ -1,0 +1,22 @@
+services:
+  margarita:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    container_name: mcp
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PROMPT_STORAGE_PATH=/app/prompts
+    volumes:
+      - prompts:/app/prompts
+    networks:
+      - margarita-network
+
+volumes:
+  prompts:
+
+networks:
+  margarita-network:
+    driver: bridge

@@ -8,9 +8,14 @@ build/
 dist/
 *.egg-info/
 venv/
+.venv/
 .git
 .gitignore
 .DS_Store
 tests/
 *.log
+.idea/
+.ruff_cache/
+.vscode/
+Makefile
 
